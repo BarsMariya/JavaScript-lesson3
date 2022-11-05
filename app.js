@@ -49,10 +49,16 @@
 //         console.log('Неизвестный тип пользователя')
 //         break;
 // }
-let i = 0;
-const lastNumber = 10;
-let message = ' ';
-while (++i <= lastNumber) {
-    message += `${i}${i !== lastNumber ? ', ':''}`;
+// let i = 0;
+// const lastNumber = 10;
+// let message = ' ';
+// while (++i <= lastNumber) {
+//     message += `${i}${i !== lastNumber ? ', ':''}`;
+// }
+// console.log(message);
+let message = '';
+for (let index = 0; index < 10; index++) {
+    if (index % 2 !== 0)
+    message += `${index} `;
 }
 console.log(message);
