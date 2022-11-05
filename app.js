@@ -23,10 +23,29 @@
 // if (gender.toLocaleLowerCase() === 'жен'){
 //     console.log('вам направо');
 // }
-const isAdmin = true;
+// const isAdmin = true;
 
-console.log(`Добро пожаловать: ${
-    isAdmin 
-    ? `Администратор`
-    : `пользователь`
-}`);
+// console.log(`Добро пожаловать: ${
+//     isAdmin 
+//     ? `Администратор`
+//     : `Пользователь`
+// }`);
+const typeUser = 'user'; // user, guest, bot
+
+switch (typeUser) {
+    case 'admin':
+        console.log('Вы администратор');
+        break;
+    case 'user':
+        console.log('Вы пользователь');
+        break;
+    case 'guest':
+        console.log('Вы гость');
+        break;
+    case 'bot':
+        console.log('Вы бот');
+        break;
+    default:
+        console.log('Неизвестный тип пользователя')
+        break;
+}
